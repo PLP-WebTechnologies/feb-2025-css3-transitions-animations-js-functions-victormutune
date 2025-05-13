@@ -1,0 +1,48 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Animation for the box */
+@keyframes boxAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #ff6347;
+    }
+    50% {
+        transform: scale(1.5);
+        background-color: #4CAF50;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #ff6347;
+    }
+}
+
+/* Box style */
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #ff6347;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animation applied to the box when triggered */
+.animated {
+    animation: boxAnimation 2s infinite;
+}
